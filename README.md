@@ -1,13 +1,9 @@
 # NgNoteBook
 
-This project was generated with [angular-cli](https://github.com/angular/angular-cli) version 1.0.0-beta.21.
+This Anglular 2 demo project demonstrates how to perform CRUD operation using Localstorage to save note data when any CREATE, READ, UPDATE or DELETE operation is performed. It also makes use of moment library to format the time. Make sure you navigate to the project folder and type `npm install` before running the server.
 
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
-
-## Code scaffolding
-
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive/pipe/service/class`.
 
 ## Build
 
