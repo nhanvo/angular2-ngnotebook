@@ -1,0 +1,32 @@
+<div class="container">
+	<div class="well">
+		<h2>What is your line?</h2>
+		<form>
+			<div class="form-group">
+				<input type="text" name="noteStr" [(ngModel)]="noteStr" class="form-control" placeholder="Enter your note...">
+				<button class="btn btn-primary" (click)="createNote()">Create Note</button>
+			</div>
+		</form>
+	</div>
+
+	<div *ngFor="let note of noteList">
+		<div class="row">
+				<div class="col-md-3 col-sm-3">
+					<h4>{{ formatTime(note.time) }}</h4>
+					<h6>{{ note.text.substring(0, 30) }}...</h6>
+				</div>
+				<div class="col-md-8 col-sm-8 col-xs-10">
+					<p *ngIf="!note.editState">{{ note.text }}</p>
+					<textarea *ngIf="note.editState" [(ngModel)]="editText" class="form-control" rows="4"></textarea>
+
+					<a (click)="enterEditMode(note)" *ngIf="!note.editState">Edit</a>
+					<a (click)="updateNote(note)" *ngIf="note.editState">Save</a>
+					<a (click)="note.editState = !note.editState" *ngIf="note.editState">Cancel</a>
+				</div>
+				<div class="col-md-1 col-sm-1 col-xs-2">
+					<button (click)="deleteNote(note)">x</button>
+				</div>
+		</div>
+		<hr>
+	</div>
+</div>
