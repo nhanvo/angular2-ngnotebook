@@ -1,6 +1,8 @@
 # NgNoteBook
 
-This Anglular 2 demo project demonstrates how to perform CRUD operation using Localstorage to save note data when any CREATE, READ, UPDATE or DELETE operation is performed. It also makes use of moment library to format the time. Make sure you navigate to the project folder and type `npm install` before running the server.
+This Anglular 2 demo project demonstrates how to perform CRUD operation using Localstorage to save note data. It also makes use of moment library to format the time. Make sure you navigate to the project folder and type `npm install` before running the server.
+
+![screen shot 2017-01-15 at 10 44 42 pm](https://cloud.githubusercontent.com/assets/19909685/21962563/416e3452-db74-11e6-89c9-eb5d8372e7ec.png)
 
 ## Development server
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
